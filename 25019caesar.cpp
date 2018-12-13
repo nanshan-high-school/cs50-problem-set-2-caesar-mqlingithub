@@ -11,13 +11,13 @@ int main() {
   cout << "\n密文為:";
   for (int i = 0; i < count; i++) {
     if (str[i] == '\0') count = 0;
-    else if (str[i] > 'A' && str[i] < 'Z') {
+    else if (str[i] >= 'A' && str[i] <= 'Z') {
       str[i] = (str[i] - 65 + key) % 26 + 65;
       cout << (char)str[i];
       count++;
     }
 
-    else if (str[i] > 'a' && str[i] < 'z') {
+    else if (str[i] >= 'a' && str[i] <= 'z') {
       str[i] = (str[i] - 97 + key) % 26 + 97;
       cout << (char)str[i];
       count++;
