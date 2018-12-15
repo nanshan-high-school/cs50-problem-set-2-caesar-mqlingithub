@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
   string str;
-  long int key, count;
+  long int key;
   cout << "請輸入要加密(凱薩加密)的明文:";
   cin >> str;
   cout << "請輸入密鑰(每一字元要加多少):";
